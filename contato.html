@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+		<link rel="stylesheet" href="/reset.juliano.css/normalize.css">
+		<link rel="stylesheet" href="/reset.juliano.css/reset.local.css">
+		<link rel="stylesheet" href="/reset.juliano.css/typography.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="logo da barbearia"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="caixa">
+				<form>
+					<!-- INPUT -->
+						<label for="nome-sobrenome">Nome e sobrenome</label>
+						<input class="input-padrao" type="text" id='nome-sobrenome' required>
+
+						<label for="email">Email</label>
+						<input class="input-padrao" type="email" id='email' required placeholder="seuemail@email.com">
+
+						<label for="telefone">Telefone</label>
+						<input class="input-padrao" type="tel" id='telefone' required placeholder="(xx)xxxxx-xxxx">
+
+					<!-- INPUT COMPLEXO -->
+					<!-- area para o usuário digitar o conteudo -->
+
+						<label for="mensagem">Mensagem</label>
+						<textarea class="input-padrao" cols="30" rows="10"id="mensagem" required></textarea>
+
+
+					<fieldset>
+						<!-- fieldset, ficam no lugar da div para separar item e a tag <p>, entra a legend -->
+						<legend>Como prefere o nosso contato?</legend>
+						<!-- input radio para o usuario escolher somente uma opçao. Eles precisam ter o mesmo NAME para a escolha somente de uma opão. -->
+						<label class="radio" for="radio-email">
+							<input name="contato" type="radio" value="email" id="radio-email">
+							Email
+						</label>
+
+						<label for="radio-telefone">
+							<input name="contato" type="radio" value="telefone" id="radio-telefone">
+							Telefone
+						</label>
+
+						<label for="radio-whatsapp">
+							<input name="contato" type="radio" value="whatsapp" checked id="radio-whatsapp">
+							WhatsApp
+						</label>
+
+						<!-- Não é preciso utilizar for e id para linkar o label com o id quando se coloca o input dentro da label -->
+						<label class="checkbox">
+							<input type="checkbox" checked id="radio-chekbox">
+							Gostaria de receber nossas novidades por e-mail?
+						</label>
+					</fieldset>
+
+					<!-- menu dropdown utiliza o SELECT + options -->
+					<fieldset>
+						<legend>Qual horario que prefere ser atendido</legend>
+
+						<select name="" id="">
+							<option value="manha">Manhã</option>
+							<option value="tarde">Tarde</option>
+							<option value="noite">Noite</option>
+						</select>
+
+					</fieldset>
+
+					<input type="submit" value="Enviar formulário" class="enviar">
+				</form>
+				<!-- tabelas -->
+				<table>
+					<thead>
+						<tr>
+							<th>Dia</th>
+							<th>Horário</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Segunda</td>
+							<td>8 ~ 20</td>
+						</tr>
+						<tr>
+							<td colspan="1" >Quarta</td>
+							<td>8 ~ 20</td>
+						</tr>
+						<tr>
+							<td>Sexta</td>
+							<td>8 ~ 20</td>
+						</tr>
+					</tbody>
+				</table>
+			</main>
+		</div>
+		<footer>
+			<img src="logo-branco.png" alt="logo da barbearia">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
